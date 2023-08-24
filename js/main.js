@@ -1,5 +1,5 @@
 // creo Array di oggetti (membri del team)
-const member = [
+const members = [
     {
         nome: 'Wayne Barnett',
         ruolo: 'Founder & CEO',
@@ -31,3 +31,9 @@ const member = [
         immagine: 'barbara-ramos-graphic-designer.jpg'
     }
 ];
+
+// stampare su console le informazioni di ogni membro
+// utilizzando un ciclo for
+for(const singoloNome of members) {
+    console.log(singoloNome.nome);
+}
