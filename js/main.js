@@ -46,16 +46,6 @@ for (const membro of members) {
 }
 
 // stampare su DOM informazioni membri
-// for (const membro of members) {
-//     caratteristicheMembri.innerHTML += `
-//     <div>
-//     ${membro.nome}-
-//     ${membro.ruolo}
-//     <img src="img/${membro.immagine}" alt="">
-
-//     </div>
-//     `
-// }
 
 for (const membro of members) {
   caratteristicheMembri.innerHTML += `
