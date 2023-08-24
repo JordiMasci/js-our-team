@@ -1,39 +1,43 @@
 // creo Array di oggetti (membri del team)
 const members = [
-    {
-        nome: 'Wayne Barnett',
-        ruolo: 'Founder & CEO',
-        immagine: 'wayne-barnett-founder-ceo.jpg'
-    },
-    {
-        nome: 'Angela Caroll',
-        ruolo: 'Chief Editor',
-        immagine: 'angela-caroll-chief-editor.jpg'
-    },
-    {
-        nome: 'Walter Gordon',
-        ruolo: 'Office Manager',
-        immagine: 'walter-gordon-office-manager.jpg'
-    },
-    {
-        nome: 'Angela Lopez',
-        ruolo: 'Social Media Manager',
-        immagine: 'angela-lopez-social-media-manager.jpg'
-    },
-    {
-        nome: 'Scott Estrada',
-        ruolo: 'Developer',
-        immagine: 'scott-estrada-developer.jpg'
-    },
-    {
-        nome: 'Barbara Ramos',
-        ruolo: 'Graphic Designer',
-        immagine: 'barbara-ramos-graphic-designer.jpg'
-    }
+  {
+    nome: "Wayne Barnett",
+    ruolo: "Founder & CEO",
+    immagine: "wayne-barnett-founder-ceo.jpg",
+  },
+  {
+    nome: "Angela Caroll",
+    ruolo: "Chief Editor",
+    immagine: "angela-caroll-chief-editor.jpg",
+  },
+  {
+    nome: "Walter Gordon",
+    ruolo: "Office Manager",
+    immagine: "walter-gordon-office-manager.jpg",
+  },
+  {
+    nome: "Angela Lopez",
+    ruolo: "Social Media Manager",
+    immagine: "angela-lopez-social-media-manager.jpg",
+  },
+  {
+    nome: "Scott Estrada",
+    ruolo: "Developer",
+    immagine: "scott-estrada-developer.jpg",
+  },
+  {
+    nome: "Barbara Ramos",
+    ruolo: "Graphic Designer",
+    immagine: "barbara-ramos-graphic-designer.jpg",
+  },
 ];
 
 // stampare su console le informazioni di ogni membro
 // utilizzando un ciclo for
-for(const singoloNome of members) {
-    console.log(singoloNome.nome);
+
+for (const membro of members) {
+    console.log('Nome:', membro.nome);
+    console.log('Ruolo:', membro.ruolo);
+    console.log('Immagine:', membro.immagine);
+    console.log('-------------------------');
 }
