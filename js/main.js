@@ -32,12 +32,41 @@ const members = [
   },
 ];
 
+// collego html a js
+const caratteristicheMembri = document.getElementById("schede");
+
 // stampare su console le informazioni di ogni membro
 // utilizzando un ciclo for
 
 for (const membro of members) {
-    console.log('Nome:', membro.nome);
-    console.log('Ruolo:', membro.ruolo);
-    console.log('Immagine:', membro.immagine);
-    console.log('-------------------------');
+  console.log("Nome:", membro.nome);
+  console.log("Ruolo:", membro.ruolo);
+  console.log("Immagine:", membro.immagine);
+  console.log("-------------------------");
+}
+
+// stampare su DOM informazioni membri
+// for (const membro of members) {
+//     caratteristicheMembri.innerHTML += `
+//     <div>
+//     ${membro.nome}-
+//     ${membro.ruolo}
+//     <img src="img/${membro.immagine}" alt="">
+
+//     </div>
+//     `
+// }
+
+for (const membro of members) {
+  caratteristicheMembri.innerHTML += `
+  <div class="col-4">
+  <div class="card mb-4" style="width: 18rem;">
+  <img src="img/${membro.immagine}" class="card-img-top " alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-center">${membro.nome}</h5>
+    <p class="card-text text-center">${membro.ruolo}</p>
+  </div>
+</div>
+</div>
+    `;
 }
